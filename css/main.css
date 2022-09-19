@@ -38,6 +38,12 @@ body {
   cursor: pointer;
 }
 
+.left-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .bg-color-green {
   background-color: #0274ff;
 }
@@ -274,7 +280,21 @@ main h1::after {
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 10px;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  text-transform: capitalize;
+  position:relative;
+}
+
+.box .header h2 {
+  font-size: 25px;
+  height: fit-content;
+  margin-top: 0px;
+}
+
+.box .header p {
+  position: absolute;
+  top: 35px;
+  color: rgba(0, 0, 0, 0.479);
 }
 
 @media (min-width: 1000px) and (max-width: 1200px){
@@ -289,7 +309,6 @@ main h1::after {
     margin-left: 0px;
 
   }
-
 }
 
 @media (max-width: 700px) {

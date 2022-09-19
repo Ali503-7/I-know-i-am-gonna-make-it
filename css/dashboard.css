@@ -16,24 +16,14 @@
   position: relative;
 }
 
-.welcome .top-side h2 {
-  font-size: 25px;
-  height: fit-content;
-  margin-top: 0px;
-}
 
-.welcome .top-side p {
-  position: absolute;
-  top: 30px;
-  color: rgba(0, 0, 0, 0.479);
-}
 
 .welcome .top-side img {
   width: calc(100% / 2);
   height: calc(100% / 1.5);
   position: absolute;
-  right: 0px;
-  top: 0px;
+  right: 10px;
+  top: 10px;
 }
 
 
@@ -41,7 +31,7 @@
 .welcome .bottom-side {
   display: flex;
   flex-direction: column;
-  height: 50%;
+  height: 57%;
   position: relative;
   justify-content: center;
 }
@@ -62,7 +52,7 @@
 
 .welcome .profile-img {
   position: absolute;
-  top: -30px;
+  top: -10px;
 }
 
 .welcome .bottom-side .center-section {
@@ -72,9 +62,205 @@
   text-align: center;
 }
 
-.welcome .bottom-side button {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
 /* End welcome */
+
+/* Start quick draft */
+
+.quick-draft {
+  display: flex;
+  flex-direction: column;
+}
+
+.bottom-quick {
+  position: relative;
+  height: 100%;
+}
+
+.bottom-quick form{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0px 0px 0px;
+}
+
+.bottom-quick form input {
+  border: 0px;
+  background-color: #eee;
+  border-radius: 5px;
+  padding: 0px 10px;
+  outline: none;
+  width: 100%;
+  display: flex;
+}
+
+.bottom-quick form input {
+  height: 35px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  border: 0px;
+  background-color: #eee;
+  border-radius: 5px;
+  height: 120px !important;
+  width: 100%;
+  padding: 10px 10px;
+  resize: none;
+  outline: none;
+  font-size: 12px;
+}
+/* End quick draft */
+
+/* Start year target */
+
+.yearly-target {
+  display: flex;
+  flex-direction: column;
+}
+
+.yearly-mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.contan {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+}
+
+.contan i {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.contan:first-of-type i {
+  background-color: #0870f939;
+  color: #0872f9;
+}
+
+.contan:nth-child(2) i {
+  background-color: #efa21d42;
+  color: #efa11d;
+}
+
+.contan:last-of-type i {
+  background-color: #2dbb6641;
+  color: #2dbb65;
+}
+
+.dis {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-top: 3px;
+  position: relative;
+  width: 82%;
+  height: 100%;
+}
+.dis p {
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.dis p:first-of-type {
+  color: rgba(0, 0, 0, 0.548);
+}
+
+.dis p:last-of-type {
+  font-weight: bold;
+}
+
+.dis span {
+  position: absolute;
+  color: white;
+  width: 35px;
+  height: 20px;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  bottom: 15px;
+}
+
+.contan:first-of-type span {
+  left: 33%;
+  background-color: #0872f9;
+}
+
+.contan:nth-child(2) span {
+  left: 48%;
+  background-color: #efa11d;
+} 
+
+.contan:last-of-type span {
+  left: 68%;
+  background-color: #2dbb65;
+}
+
+.contan span::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  border-style: solid;
+  border-width: 5px;
+}
+
+
+.contan:first-of-type span::after {
+  border-color: #0872f9 transparent transparent transparent;
+}
+
+.contan:nth-child(2) span::after {
+  border-color: #efa11d transparent transparent transparent;
+}
+
+.contan:last-of-type span::after {
+  border-color: #2dbb65 transparent transparent transparent;
+}
+
+.contan .dis::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  bottom: 5px;
+}
+
+.contan .dis::after {
+  content: "";
+  height: 2px;
+  position: absolute;
+  bottom: 5px;
+}
+
+.contan:first-of-type .dis::before {
+  background-color: #0870f968;
+}
+.contan:nth-child(2) .dis::before {
+  background-color: #efa21d68;
+}
+.contan:last-of-type .dis::before {
+  background-color: #2dbb6668;
+}
+
+.contan:first-of-type .dis::after {
+  background-color: #0870f9;
+  width: 40%;
+}
+.contan:nth-child(2) .dis::after {
+  background-color: #efa21d;
+  width: 55%;
+}
+.contan:last-of-type .dis::after {
+  background-color: #2dbb66;
+  width: 75%;
+}
+/* End year target
