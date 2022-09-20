@@ -459,3 +459,52 @@ textarea {
   cursor: pointer;
 }
 /* End Latest Tasks */
+
+/* Start Top Search Items */
+
+.top-search {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+
+.search-text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  height: 100%;
+}
+
+.search-text p {
+  margin: 0px;
+}
+
+.on-right,
+.on-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.on-left {
+  align-items: flex-end;
+}
+
+.on-left p:not(.dif) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  background-color: rgba(128, 128, 128, 0.198);
+  width: 35px;
+  font-size: 12px;
+  border-radius: 5px;
+}
+
+.dif {
+  color: rgba(0, 0, 0, 0.302);
+}
+/* End Top Search Items */
