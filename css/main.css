@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+:root {
+  --button-bg-gray:rgba(0, 0, 0, 0.088);
+}
+
 body {
   background-color: #f1f5fb;
   padding: 0px;

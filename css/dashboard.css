@@ -508,3 +508,76 @@ textarea {
   color: rgba(0, 0, 0, 0.302);
 }
 /* End Top Search Items */
+
+/* Start latest Uploads */
+
+.uploads {
+  display: flex;
+  flex-direction: column;
+}
+
+.uploads .header h2{
+  margin: 0px;
+}
+
+.uploads-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  position: relative;
+}
+
+.contaner-uploads {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.contaner-uploads img {
+  width: 30px;
+  height: 30px;
+}
+
+.contaner-uploads .text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 5px;
+  justify-content: center;
+}
+
+.contaner-uploads:not(.last)::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: var(--button-bg-gray);
+  bottom: -3px;
+}
+
+.contaner-uploads h3 ,
+.contaner-uploads p {
+  margin: 0px;
+  padding: 0px;
+}
+.contaner-uploads p{
+  color: rgba(0, 0, 0, 0.381);
+}
+
+.contaner-uploads h3 {
+  font-size: 13px;
+  font-weight: 300;
+}
+.contaner-uploads span {
+  position: absolute;
+  display: flex;
+  right: 0px;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  background-color: var(--button-bg-gray);
+  border-radius: 5px;
+}
+/* End latest Uploads */
