@@ -665,7 +665,7 @@ textarea {
 
 @media (max-width: 380px) {
   .project-progress .text::before {
-    top: 80px;
+    height: 80px;
   }
 }
 /* End current project progress */
