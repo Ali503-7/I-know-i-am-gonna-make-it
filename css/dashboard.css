@@ -581,3 +581,91 @@ textarea {
   border-radius: 5px;
 }
 /* End latest Uploads */
+
+/* Start current project progress */
+.project-progress .header h2{
+  margin: 0px;
+}
+
+.project-progress{
+  flex-direction: column;
+  position: relative;
+}
+
+.project-progress .img-space img {
+  width: 100px;
+  height: 130px;
+  opacity: .5;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.main-progress {
+  margin-left: 45px;
+  display: flex;
+  height: fit-content;
+
+}
+
+.main-progress .text {
+  display: flex;
+  justify-content: space-between;
+  height: 200%;
+  flex-direction: column;
+}
+
+.main-progress .text p {
+  margin: 0px;
+  font-size: 13px;
+}
+
+.main-progress .statdge span {
+  width: 20px;
+  height: 20px;
+  background-color: var(--twitter-bg);
+  position: absolute;
+  border-radius: 50%;
+  left: 21px;
+  border: solid 2px #fff;
+  outline-color: var(--twitter-bg);
+  outline-style: solid;
+  outline-width: 2px;
+  z-index: 1;
+}
+
+.main-progress .not-yet span {
+  background-color: #fff !important;
+}
+
+.main-progress .progress span {
+  animation: progress infinite alternate 1s;
+  
+}
+
+@keyframes progress {
+  from{
+    background-color: var(--twitter-bg);
+  }
+
+  to {
+    background-color: #fff;
+  }
+}
+
+.project-progress .text::before {
+  content: "";
+  width: 2px;
+  height: 50%;
+  background-color: var(--twitter-bg);
+  position: absolute;
+  left: 30px;
+  top: 56px;
+}
+
+@media (max-width: 380px) {
+  .project-progress .text::before {
+    top: 80px;
+  }
+}
+/* End current project progress */
