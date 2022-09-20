@@ -31,6 +31,7 @@ body {
 
 .profile-img {
   width: 40px;
+  height: 40px;
   border: 1px solid #fff;
   border-radius: 50%;
 }
@@ -279,7 +280,7 @@ main h1::after {
 
 .box {
   display: flex;
-  min-width: calc(97% /3);
+  width: calc(97% /3);
   height: 300px;
   background-color: #fff;
   padding: 10px;
