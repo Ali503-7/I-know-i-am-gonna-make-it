@@ -932,3 +932,100 @@ textarea {
   color: #0276b5;
 }
 /* End social media stats */
+
+/* Start Table */
+
+.table {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+
+@media (max-width: 700px) {
+    .table {
+      overflow-x: scroll;
+      max-width: 250px;
+    }
+}
+
+table {
+  border-spacing: 0px;
+  font-size: 15px;
+}
+
+thead {
+  background-color: #ccc;
+}
+
+th ,td {
+  padding: 20px;
+  text-align: left;
+  border: solid 1px rgba(204, 204, 204, 0.192);
+}
+
+tr img {
+  width: 25px;
+  position: absolute;
+}
+
+.img-td {
+  position: relative;
+}
+
+.img-td img {
+  border: solid 1px #fff;
+  border-radius: 50%;
+}
+
+.img-td img:first-of-type {
+  left: 5px;
+  z-index: 1;
+}
+
+.img-td img:nth-child(2) {
+  left: 20px;
+  z-index: 2;
+}
+
+.img-td img:nth-child(3) {
+  left: 35px;
+  z-index: 3;
+}
+
+.img-td img:nth-child(4) {
+  left: 50px;
+  z-index: 4;
+}
+
+.img-td img:hover {
+  z-index: 5;
+  cursor: pointer;
+}
+
+tr .btn {
+  padding: 5px;
+  font-size: 13px;
+}
+
+tr:nth-child(1) .btn {
+  background-color: #f2a013;
+}
+tr:nth-child(2) .btn {
+  background-color: #0673fe;
+  margin: -2px;
+}
+tr:nth-child(3) .btn {
+  background-color: #23c463;
+}
+tr:nth-child(4) .btn {
+  background-color: #23c463;
+}
+tr:nth-child(5) .btn {
+  background-color: #d84035;
+}
+tr:nth-child(6) .btn {
+  background-color: #23c463;
+}
+/* End Table */
