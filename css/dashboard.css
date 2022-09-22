@@ -948,6 +948,10 @@ textarea {
       overflow-x: scroll;
       max-width: 250px;
     }
+
+    table {
+      width: 1000px;
+    }
 }
 
 table {
