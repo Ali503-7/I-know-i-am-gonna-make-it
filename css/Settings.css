@@ -1,0 +1,238 @@
+.setting .box{
+  width: calc(99% /2);
+height: 30  0px;
+}
+
+@media (max-width: 700px) {
+
+}
+
+/* Start site control */
+
+.site-control textarea {
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  padding: 10px 10px;
+  resize: none;
+  outline: none;
+  font-size: 12px;
+  border: solid 1px #00000070;
+  background-color: #fff;
+  font-size: 20px;
+}
+
+.site-control .text-control{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  margin-top: 10px;
+}
+
+.switch-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.switch-area .text-switch {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.switch-area .text-switch h2 ,
+.switch-area .text-switch p{
+  margin: 0px;
+  font-weight: 100;
+}
+
+.switch-area .text-switch p{
+  color: rgba(0, 0, 0, 0.55);
+}
+
+
+.text-control form {
+  height: 100%;
+}
+
+
+.switch {
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #0870f978;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  transition: .3s;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  opacity: .5;
+  width: 30px;
+  height: 20px;
+  z-index: 3;
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked {
+  right: 3px;
+}
+
+input[type="checkbox"]:checked+span {
+  z-index: -1;
+  opacity: 0;
+}
+
+.switch::before {
+  content: "\2713";
+  font-size: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--twitter-bg);
+  right: 3px;
+}
+
+.switch span {
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #34383e;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  transition: .3s;
+  z-index: 1;
+  opacity: 1;
+  left: 0;
+}
+
+
+.switch span::before{
+  content: "\2717";
+  font-size: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #6a7a91fa;
+  left: 3px;
+  opacity: 1;
+}
+/* End site control */
+
+
+/* Start General info */
+
+.general-info .info-bottom {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.general-info form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  
+}
+
+.general-info .input-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.general-info form .email {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.general-info .info-bottom input {
+  height: 35px;
+  border-radius: 5px;
+  outline: none;
+  border: solid 1px rgba(0, 0, 0, 0.154);
+  padding-left: 10px;
+
+}
+
+.general-info .info-bottom label {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.486);
+}
+
+.general-info .info-bottom input[type="email"]{
+  background-color: var(--button-bg-gray);
+  width: 100%;
+}
+
+.info-bottom .inline {
+  display: flex;
+  align-items: center;
+}
+
+.info-bottom .inline span {
+  margin: 0px 20px;
+  font-size: 20px;
+  color: var(--twitter-bg);
+  cursor: pointer;
+}
+/* End General info */
+
+/* Start Security info */
+
+.security-bottom {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.security-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.security-box::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 1px;
+  color: #000;
+}
+
+.security-box .left-text h3{
+  font-weight: 100;
+  margin: 0px;
+}
+
+.security-box .left-text p {
+  color: rgba(0, 0, 0, 0.572);
+}
+/* End Security info */

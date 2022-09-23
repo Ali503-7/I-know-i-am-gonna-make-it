@@ -13,7 +13,7 @@
 body {
   background-color: #f1f5fb;
   padding: 0px;
-  margin: 3px 3px 3px 0px;
+  margin: 0px;
   font-size: 12px;
   height: 100%;
   display: grid;
@@ -23,8 +23,9 @@ body {
     "aside header header header header header header"
     "aside main main main main main main";
   /* grid-gap: 3px; */
-  overflow: scroll;
+  overflow-y: scroll;
   transition: .5s;
+  min-height: 100vh;
 }
 /* global */
 
@@ -54,6 +55,26 @@ body {
   background-color: #0274ff;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover button{
+  background-color: var(--button-bg-gray);
+}
+
+textarea {
+  border: 0px;
+  background-color: #eee;
+  border-radius: 5px;
+  height: 100%;
+  width: 100%;
+  padding: 10px 10px;
+  resize: none;
+  outline: none;
+  font-size: 12px;
+}
 
 /* Start header */
 header {
@@ -117,7 +138,9 @@ header form input {
 header form input[type="search"]:focus {
   width: 100%;
 }
-
+header form input[type="search"]:focus::placeholder {
+  opacity: 0;
+}
 header form span {
   position: absolute;
   left: 3%;
@@ -237,10 +260,11 @@ main {
   display: grid;
   grid-gap: 5px;
   grid-template-columns: repeat(1 , auto);
-  grid-template-rows: repeat(1 , 1fr);
+  grid-template-rows: auto 1fr;
   grid-template-areas: 
   "head head head"
   "contact contact contact";
+  overflow: hidden;
 }
 
 main h1 {
@@ -272,7 +296,7 @@ main h1::after {
   grid-area: contact;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: start;
   width: 100%;
   flex-wrap: wrap;
@@ -280,7 +304,7 @@ main h1::after {
 
 .box {
   display: flex;
-  width: calc(97% /3);
+  width: calc(98% /3);
   height: 300px;
   background-color: #fff;
   padding: 10px;
@@ -289,6 +313,8 @@ main h1::after {
   /* justify-content: space-between; */
   text-transform: capitalize;
   position:relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .box .header h2 {

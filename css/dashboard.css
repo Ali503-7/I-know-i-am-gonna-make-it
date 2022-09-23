@@ -80,6 +80,7 @@
   display: flex;
   flex-direction: column;
   margin: 20px 0px 0px 0px;
+  height: 80%;
 }
 
 .bottom-quick form input {
@@ -93,21 +94,11 @@
 }
 
 .bottom-quick form input {
-  height: 35px;
-  margin-bottom: 20px;
+  height: 30%;
+  margin-bottom: 10px;
 }
 
-textarea {
-  border: 0px;
-  background-color: #eee;
-  border-radius: 5px;
-  height: 120px !important;
-  width: 100%;
-  padding: 10px 10px;
-  resize: none;
-  outline: none;
-  font-size: 12px;
-}
+
 /* End quick draft */
 
 /* Start year target */
