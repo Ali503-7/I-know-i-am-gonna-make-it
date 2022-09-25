@@ -199,13 +199,13 @@ aside ul {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  height: 400px;
+  height: fit-content;
 }
 
 aside li {
   position: relative;
   display: flex;
-
+  margin-bottom: 20px;
 }
 
 aside button {
@@ -349,6 +349,9 @@ main h1::after {
 @media (max-width: 700px) {
   .box {
     min-width: calc(100%);
+  }
+  aside li {
+    margin-bottom: 0px;
   }
 }
 
