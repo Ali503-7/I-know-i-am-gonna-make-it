@@ -76,6 +76,80 @@ textarea {
   font-size: 12px;
 }
 
+
+.switch {
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #0870f978;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.switch input[type="checkbox"] {
+  position: absolute;
+  opacity: .5;
+  width: 30px;
+  height: 20px;
+  z-index: 3;
+  opacity: 0;
+}
+
+.switch input[type="checkbox"]:checked {
+  right: 3px;
+}
+
+.switch input[type="checkbox"]:checked+span {
+  z-index: -1;
+  opacity: 0;
+}
+
+.switch::before {
+  content: "\2713";
+  font-size: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: var(--twitter-bg);
+  right: 3px;
+}
+
+.switch span {
+  width: 100px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #34383e;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0px;
+}
+
+
+.switch span::before {
+  content: "\2717";
+  font-size: 25px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 32px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #6a7a91fa;
+  left: 3px;
+  opacity: 1;
+}
+
 /* Start header */
 header {
   background-color: #fff;

@@ -1,0 +1,81 @@
+.profile-one {
+  width: 1150px;
+  height: 350px;
+  display: flex;
+  flex-direction: row;
+}
+
+.profile-one .profile-aside {
+  width: 200px;
+  height: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  align-items: center;
+  
+}
+
+.profile-one .profile-aside::after {
+  content: "";
+  width: 1px;
+  height: 75%;
+  background-color: rgba(0, 0, 0, 0.219);
+  position: absolute;
+  left: 200px;
+}
+
+.profile-one .profile-aside img {
+  width: 130px;
+}
+
+.profile-one .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.profile-one .left-side .slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-right: 250px;
+  position: relative;
+}
+
+.profile-one .left-side .slide .slide-one {
+  margin-left: 20px;
+}
+
+.profile-one .left-side .slide:not(:last-child)::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.219);
+  position: absolute;
+}
+
+.profile-one .left-side .slide:first-of-type::after {
+  bottom: -6px;
+}
+
+.slide-four {
+  padding-bottom: 10px;
+}
+
+.bg-gray {
+  background-color: rgba(128, 128, 128, 0.116);
+}
+
+.slide h3 ,
+.slide p {
+  color: rgba(0, 0, 0, 0.308);
+}
+
+.slide span {
+  color: #000;
+  font-weight: bold;
+}
