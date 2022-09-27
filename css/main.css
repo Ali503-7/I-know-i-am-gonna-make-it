@@ -29,6 +29,17 @@ body {
 }
 /* global */
 
+.f-size-15 {
+  font-size: 15px;
+}
+
+.color-gray {
+  color: rgb(128, 128, 128);
+}
+
+.bg-gray {
+  background-color: rgba(128, 128, 128, 0.144);
+}
 
 .profile-img {
   width: 40px;
@@ -340,7 +351,7 @@ main {
   grid-template-rows: auto 1fr;
   grid-template-areas: 
   "head head head"
-  "contact contact contact";
+  "contant contant contant";
   overflow: hidden;
 }
 
@@ -369,8 +380,8 @@ main h1::after {
   left: 0%;
 }
 
-.contact {
-  grid-area: contact;
+.contant {
+  grid-area: contant;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -386,7 +397,7 @@ main h1::after {
   background-color: #fff;
   padding: 10px;
   border-radius: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   /* justify-content: space-between; */
   text-transform: capitalize;
   position:relative;

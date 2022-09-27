@@ -1,8 +1,16 @@
+/* Start user settings */
+
+.profile .box {
+  width: calc(99% / 2);
+  display: flex;
+}
+
 .profile-one {
-  width: 1150px;
+  width: 100%;
   height: 350px;
   display: flex;
   flex-direction: row;
+  grid-area: user;
 }
 
 .profile-one .profile-aside {
@@ -14,7 +22,11 @@
   justify-content: space-evenly;
   text-align: center;
   align-items: center;
-  
+}
+
+.profile-aside h2 ,
+.profile-aside p {
+  margin: 5px 0px;
 }
 
 .profile-one .profile-aside::after {
@@ -66,16 +78,99 @@
   padding-bottom: 10px;
 }
 
-.bg-gray {
-  background-color: rgba(128, 128, 128, 0.116);
-}
 
-.slide h3 ,
+
+.slide h2 ,
 .slide p {
-  color: rgba(0, 0, 0, 0.308);
+  color: rgba(0, 0, 0, 0.418);
 }
 
 .slide span {
   color: #000;
   font-weight: bold;
+}
+
+.profile-one .profile-aside span {
+  width: 100%;
+  height: 5px;
+  background-color: rgba(128, 128, 128, 0.274);
+  border-radius: 10px;
+  position: relative;
+}
+
+.profile-one .profile-aside span::after {
+  content: "";
+  width: 75%;
+  height: 5px;
+  background-color: var(--twitter-bg);
+  border-radius: 10px;
+  position: absolute;
+  left: 0px;
+}
+
+.stars i {
+  color: gold;
+}
+
+@media (max-width: 700px) {
+  .profile-one {
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    width: 365px;
+  }
+  .profile-one .profile-aside::after {
+    content: none;
+  }
+  
+}
+
+/* End user settings */
+
+/* Start user skills */
+
+.my-skills {
+  height: 350px;
+  grid-area: skill;
+  width: 350px;
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.skills .group {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  position: relative;
+}
+
+.skills .group:not(:last-child)::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.116);
+  left: 0px;
+  bottom: -10px;
+}
+
+.skills .group p {
+  color: #000;
+  padding: 0px 5px;
+  margin: 0px 5px 0px 0px ;
+}
+
+/* End user skills */
+
+.last-activites {
+  grid-area: last;
+  width: 100%;
+  height: 350px;
+  max-width: 100%;
+  min-width: fit-content;
 }
