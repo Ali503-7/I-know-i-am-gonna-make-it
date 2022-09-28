@@ -345,13 +345,6 @@ aside li i {
 main {
   grid-area: main;
   padding: 10px;
-  display: grid;
-  grid-gap: 5px;
-  grid-template-columns: repeat(1 , auto);
-  grid-template-rows: auto 1fr;
-  grid-template-areas: 
-  "head head head"
-  "contant contant contant";
   overflow: hidden;
 }
 
@@ -417,11 +410,11 @@ main h1::after {
   color: rgba(0, 0, 0, 0.479);
 }
 
-@media (min-width: 1000px) and (max-width: 1200px){
+/* @media (min-width: 1000px) and (max-width: 1200px){
   .box {
     min-width: calc(97% /2);
   }
-}
+} */
 
 @media (max-width: 1000px) {
   .box {

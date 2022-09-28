@@ -1,9 +1,5 @@
 /* Start user settings */
 
-.profile .box {
-  width: calc(99% / 2);
-  display: flex;
-}
 
 .profile-one {
   width: 100%;
@@ -54,7 +50,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
-  padding-right: 250px;
+  padding-right: 25%;
   position: relative;
 }
 
@@ -112,18 +108,7 @@
   color: gold;
 }
 
-@media (max-width: 700px) {
-  .profile-one {
-    flex-direction: column;
-    height: fit-content;
-    align-items: center;
-    width: 365px;
-  }
-  .profile-one .profile-aside::after {
-    content: none;
-  }
-  
-}
+
 
 /* End user settings */
 
@@ -131,8 +116,7 @@
 
 .my-skills {
   height: 350px;
-  grid-area: skill;
-  width: 350px;
+  width: calc(100% / 3);
 }
 
 .skills {
@@ -168,9 +152,154 @@
 /* End user skills */
 
 .last-activites {
-  grid-area: last;
-  width: 100%;
   height: 350px;
-  max-width: 100%;
-  min-width: fit-content;
+  width: calc(100% / 1.51)
+}
+
+
+
+.last-activites .acticities-bottom {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.last-activites .acticities-bottom .group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.last-activites .acticities-bottom .group .right-side {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.last-activites .acticities-bottom .group .right-side .text {
+display: flex;
+flex-direction: column;
+width: fit-content;
+}
+
+.last-activites .acticities-bottom .group .right-side .text p ,
+.last-activites .acticities-bottom .group .right-side .text h3 {
+  margin: 3px;
+}
+
+.last-activites .acticities-bottom .group  p {
+  color: rgba(0, 0, 0, 0.418);
+}
+
+.last-activites .acticities-bottom .group .right-side img {
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.last-activites .acticities-bottom .group .left-side {
+  align-self: flex-end;
+}
+
+.last-activites .acticities-bottom .group .left-side p:first-of-type {
+  color: #000;
+}
+
+.last-activites .acticities-bottom .group:not(:last-child)::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.096);
+  position: absolute;
+  bottom: 0px;
+}
+
+
+@media (max-width: 810px) {
+  .profile-one {
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+  }
+
+  .profile-one .profile-aside::after {
+    content: none;
+  }
+
+  .profile-one .left-side .slide {
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 0px;
+  }
+
+  .profile-one .left-side .slide .slide-one {
+    margin: 0px;
+  }
+
+  .profile-one .left-side .slide:not(:last-child)::after {
+    position: relative;
+    bottom: 0px;
+  }
+
+  .my-skills {
+    width: 100%;
+  }
+
+  .last-activites {
+    width: 100%;
+  }
+
+  .skills .group {
+    justify-content: space-evenly;
+  }
+
+  .slide h3,
+  .slide p {
+    margin: 5px;
+  }
+
+  .profile-one .profile-aside span ,
+  .profile-one .profile-aside .stars {
+    margin: 5px;
+  }
+
+  .last-activites{
+    height: fit-content;
+  }
+
+  .last-activites .acticities-bottom .group ,
+  .last-activites .acticities-bottom .group .right-side 
+  {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .last-activites .acticities-bottom .group .left-side{
+    align-self: center;
+  }
+}
+
+@media (max-width: 1000px) {
+  .profile-one .left-side .slide {
+    padding-right: 0px;
+  }
+}
+
+@media (max-width: 1000px) and (min-width: 810px) {
+  .last-activites {
+    width: calc(99% / 2);
+  }
+
+  .my-skills {
+    width: calc(99% / 2);
+  }
 }
