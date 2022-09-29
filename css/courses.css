@@ -46,6 +46,7 @@
   z-index: 1;
   position: absolute;
   left: 50%;
+  bottom: -5px;
   transform: translateX(-50%);
   padding: 3px;
 }
