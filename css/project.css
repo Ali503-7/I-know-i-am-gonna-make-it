@@ -1,0 +1,130 @@
+.project-con {
+  height: 230px;
+}
+
+.project-con .date {
+  position: absolute;
+  top: 10px;
+  right: 5px;
+  color: gray;
+}
+
+.project-con .project-bottom .project-imgs {
+  margin-top: 30px;
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+.project-con .project-bottom .project-imgs::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.158);
+  position: absolute;
+  bottom: -15px;
+}
+
+.project-con .project-bottom .project-imgs img {
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+
+.project-con .project-bottom .project-imgs img:hover {
+  z-index: 1;
+  cursor: pointer;
+}
+
+.project-con .project-bottom .project-imgs img:not(:first-child) {
+  margin-left: -15px;
+}
+
+.project-con .project-mid {
+  display: flex;
+  gap: 5px;
+  justify-content: flex-end;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.project-con .project-mid::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(128, 128, 128, 0.185);
+  position: absolute;
+  bottom: -5px;
+}
+
+.project-con .project-mid .btn {
+  padding: 3px;
+}
+
+.project-con .project-bot {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  bottom: -15px;
+  position: relative;
+  width: 100%;
+}
+
+.project-con .project-bot span:first-of-type {
+  position: relative;
+  width: 70%;
+  height: 5px;
+  background-color: rgba(128, 128, 128, 0.404);
+  border-radius: 10px;
+}
+
+.project-con .project-bot span:first-of-type::before {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 5px;
+  background-color: red;
+  border-radius: 10px;
+}
+
+
+.project-con:nth-child(2) .project-bot span:first-of-type::before {
+  background-color: #25c160;
+  width: 80%;
+}
+.project-con:nth-child(3) .project-bot span:first-of-type::before {
+  background-color: #0676ff;
+  width: 100%;
+}
+.project-con:nth-child(4) .project-bot span:first-of-type::before {
+  background-color: #25c160;
+  width: 60%;
+}
+.project-con:nth-child(5) .project-bot span:first-of-type::before {
+  background-color: #25c160;
+  width: 70%;
+}
+.project-con:nth-child(6) .project-bot span:first-of-type::before {
+  background-color: red;
+  width: 30%;
+}
+.project-con:nth-child(7) .project-bot span:first-of-type::before {
+  background-color: #0676ff;
+  width: 50%;
+}
+.project-con:nth-child(8) .project-bot span:first-of-type::before {
+  background-color: #25c160;
+  width: 90%;
+}
+.project-con:nth-child(9) .project-bot span:first-of-type::before {
+  background-color: red;
+  width: 40%;
+}
+
+
+.project-con .project-bot span:last-child{
+  color: gray;
+}

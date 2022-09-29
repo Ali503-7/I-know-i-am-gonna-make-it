@@ -44,7 +44,7 @@ body {
 .profile-img {
   width: 40px;
   height: 40px;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-radius: 50%;
 }
 
@@ -64,6 +64,14 @@ body {
 
 .bg-color-green {
   background-color: #0274ff;
+}
+
+.c-black {
+  color: black;
+}
+
+.p-3px {
+  padding: 3px;
 }
 
 a {
@@ -428,9 +436,7 @@ main h1::after {
   .box {
     min-width: calc(100%);
   }
-  aside li {
-    margin-bottom: 0px;
-  }
+
 }
 
 
