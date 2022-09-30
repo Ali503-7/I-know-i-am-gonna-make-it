@@ -1,0 +1,18 @@
+.frind-con {
+  width: calc(95% / 5);
+  height: fit-content;
+}
+
+.top-img {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.frind-con .top-img img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
