@@ -360,6 +360,7 @@ main h1 {
   position: relative;
   width: fit-content;
   grid-area: head;
+  margin-top: 0px;
 }
 
 main h1::before {

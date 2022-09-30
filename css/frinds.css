@@ -1,6 +1,24 @@
 .frind-con {
   width: calc(95% / 5);
   height: fit-content;
+  position: relative;
+}
+
+.icon-top {
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.534);
+}
+
+.icon-top i {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .top-img {
@@ -9,10 +27,87 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.top-img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.068);
+  bottom: -15px;
 }
 
 .frind-con .top-img img {
-  width: 80px;
-  height: 80px;
+  width: calc(100% / 2);
   border-radius: 50%;
+}
+
+.frind-con .top-img p {
+  margin: 0px;
+  opacity: .5;
+}
+.frind-con .top-img h3 {
+  margin-top: 10px;
+  margin-bottom: 0px;
+} 
+
+
+.frind-con .mid-status {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.frind-con .mid-status::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.068);
+    bottom: -10px;
+}
+
+.frind-con .mid-status .sm-con {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.frind-con .mid-status .sm-con i {
+  width: 15px;
+}
+
+.frind-con .mid-status .sm-con p { 
+  margin: 0px;
+  margin-left: 10px;
+}
+
+.frind-con .bot-date {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.frind-con .bot-date .button {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.frind-con .bot-date .button .btn:last-child {
+  background-color: #ec443f;
+  padding: 1px 3px;
+  margin-left: 5px;
+}
+
+.frind-con .bot-date .button .btn:first-child {
+  background-color: #54aaee;
+  padding: 1px 3px;
 }
