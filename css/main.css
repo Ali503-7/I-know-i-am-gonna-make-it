@@ -332,13 +332,12 @@ aside li i {
     width: 65px;
   }
 
-  aside button {
+  aside span {
     display: none;
   }
 
   aside i {
   position: unset !important;
-  margin-bottom: 20px;
   padding: 10px;
   cursor: pointer;
   }
