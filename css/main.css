@@ -21,7 +21,7 @@ body {
   grid-template-rows: auto 1fr;
   grid-template-areas:
     "aside header header header header header header"
-    "aside main main main main main main";
+    "aside main main main main main file";
   /* grid-gap: 3px; */
   overflow-y: scroll;
   transition: .5s;
@@ -301,7 +301,7 @@ aside li {
   margin-bottom: 20px;
 }
 
-aside button {
+aside span {
   width: 150px;
   padding-left: 30px;
   border: 0px;
@@ -311,6 +311,9 @@ aside button {
   padding-right: 20px;
   cursor: pointer;
   background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .active {
@@ -369,7 +372,7 @@ main h1::before {
   width: 120%;
   height: 2px;
   background-color: #fff;
-  bottom: 0px;
+  bottom: -5px;
 }
 
 main h1::after {
@@ -378,7 +381,7 @@ main h1::after {
   width: 30%;
   height: 2px;
   background-color: #000;
-  bottom: 0px;
+  bottom: -5px;
   left: 0%;
 }
 

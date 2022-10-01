@@ -128,7 +128,7 @@
 
 @media (max-width: 500px) {
   .frind-con {
-    min-width: calc(100%);
+    min-width: 100%;
   }
 
 }
