@@ -1,0 +1,95 @@
+.plan {
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+
+.plan .plan-top {
+  width: 97%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  align-self: center;
+  margin-top: 5px;
+  height: 100px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.plan .plan-top h3 {
+  font-size: 20px;
+  margin: 0px;
+}
+
+.plan .plan-top p {
+  font-size: 30px;
+  margin: 0px;
+}
+
+.plan .plan-top p sup {
+  font-size: 18px;
+}
+
+.plan:nth-child(1) .plan-top{
+  background-color: #22c45e;
+  outline: solid 3px #22c45e;
+  outline-offset: 3px;
+}
+.plan:nth-child(2) .plan-top {
+  background-color: #0175fe;
+  outline: solid 3px #0175fe;
+    outline-offset: 3px;
+}
+.plan:nth-child(3) .plan-top {
+  background-color: #f69e0e;
+  outline: solid 3px #f69e0e;
+    outline-offset: 3px;
+}
+
+.fa-check {
+  color: #22c42f;
+}
+
+.feat {
+  display: flex; 
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feat .left-feat {
+  display: flex;
+  align-items: center;
+}
+
+.feat .left-feat i {
+  width: 20px;
+}
+
+.plan .color-gray {
+  display: flex;
+  justify-content: center;
+}
+
+
+.plan .ptn {
+  color: white;
+  width: fit-content;
+  width: 30px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+.plan:first-child .ptn {
+  background-color: #22c42f;
+}
+
+.plan:nth-child(2) .ptn {
+  background-color: #0175fe;
+}

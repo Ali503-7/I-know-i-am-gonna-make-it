@@ -85,11 +85,5 @@
 }
 
 
-.files {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto 1fr;
-  grid-template-areas: "head  head head head"
-                        "contant  contant contant file ";
-}
+
 
