@@ -340,6 +340,9 @@ aside li i {
   position: unset !important;
   padding: 10px;
   cursor: pointer;
+  top: unset !important;
+  transform: unset !important;
+  left: unset !important;
   }
 
 
@@ -385,7 +388,7 @@ main h1::after {
 }
 
 .contant {
-  grid-area: contant;
+  /* grid-area: contant; */
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;

@@ -1,14 +1,16 @@
-.file-side {
-  grid-area: file;
-  height: fit-content;
-  width: calc(95% / 5);
-  box-shadow: none;
-  border-radius: 10px;
-  position: absolute;
-  right: 10px;
-  margin-bottom: 100%;
-  align-items: normal;
+.big-con {
+  display: flex;
+  flex-direction: row-reverse;
 }
+
+
+
+.file-side {
+  width: 350px !important;
+  height: fit-content !important;
+}
+
+
 
 .file-side h3 {
   font-size: 25px;
@@ -85,5 +87,78 @@
 }
 
 
+.files {
+  width: calc(95% / 4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 210px;
 
+}
+
+
+.files i {
+  font-size: 13px;
+}
+
+.files .file-img {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.files .file-img img {
+  width: 60px;
+  height: 80px;
+}
+
+
+.file-img p {
+  font-size: 13px;
+}
+
+.files div:nth-child(3) {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.files .file-date {
+  position: relative;
+}
+
+.files .file-date::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  top: -10px;
+  background-color: rgba(0, 0, 0, 0.068);
+}
+
+
+.files .file-date {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  color: gray;
+}
+
+@media (max-width:700px) {
+  .big-con {
+    display: flex;
+    flex-direction: column;
+    align-items: normal;
+  }
+
+    .file-side{
+      width: calc(100%) !important;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 700px){
+  .box {
+    width: calc(95% / 3);
+  }
+}
 

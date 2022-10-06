@@ -282,6 +282,7 @@
 .backup-bottom article {
   width: calc(95% / 3);
   display: flex;
+  position: relative;
 }
 
 .in-backup-bot {
